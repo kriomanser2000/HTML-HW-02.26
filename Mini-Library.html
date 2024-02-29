@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini-Library</title>
+</head>
+<style>
+body 
+{
+    font-family: Arial, Helvetica, sans-serif;
+}
+input
+{
+    border: 2px solid gray;
+    height: 30px;
+    width: auto;
+    border-radius: 5px;
+    font-size: 20px;
+}
+.input-field1
+{
+    border: 2px solid green;
+    background-image: url('./icons/valid.png');
+    background-size: 20px;
+    color: green;
+    margin: 10px;
+}
+.input-field2
+{
+    border: 2px solid red;
+    background-image: url('./icons/invalid.png');
+    background-size: 20px;
+    color: red;
+    margin: 10px;
+}
+input[type="checkbox"] 
+{
+    display: none;
+}
+.checkbox-wrapper 
+{
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 30px;
+    margin: 10px;
+}
+.checkbox-wrapper::before, .checkbox-wrapper::after 
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    border-radius: 15px;
+    transition: background-color 0.3s ease;
+}
+.checkbox-wrapper::after 
+{
+    content: '';
+    width: 50%;
+    background-color: #fff;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+    transform: translateX(0);
+}
+input[type="checkbox"]:checked + .checkbox-wrapper::after 
+{
+    transform: translateX(100%);
+}
+input[type="checkbox"]:checked + .checkbox-wrapper::before 
+{
+    background-color: green;
+}
+label 
+{
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px;
+    font-size: 16px;
+    margin: 10px;
+}
+button
+{
+    height: 50px;
+    width: 100px;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    font-size: large;
+    color: white;
+}
+.bt1
+{
+    height: 50px;
+    width: 50px;
+    border-radius: 100px;
+}
+</style>
+<body>
+    <h2>Inputs</h2>
+    <form>
+        <input type="text" placeholder="Enter some text">
+        <input type="text" class="input-field1" placeholder="Valid text">
+        <input type="text" class="input-field2" placeholder="Invalid text">
+        <br>
+        <h2>Check Boxes</h2>
+        <input type="checkbox" id="myCheckbox" name="myCheckbox">
+        <label for="myCheckbox">Subscribe</label>
+        <div class="checkbox-wrapper"></div>
+        <br>
+        <h2>Radio Buttons</h2>
+        <p>Gender: </p>
+        <input type="radio" id="Male" name="gender" value="Male">
+        <label for="Male">Male</label><br>  
+        <input type="radio" id="Female" name="gender" value="Female">
+        <label for="Female">Female</label><br>
+        <br>
+        <h2>Buttons</h2>
+        <button style="background-color: green;">Active</button>
+        <button style="background-color: rgb(0, 88, 0);">Hover</button>
+        <button style="background-color: rgb(255, 117, 140);">Danger</button>
+        <button style="background-color: rgb(200, 27, 55);">Hover</button>
+        <button style="background-color: gray;">Disabled</button>
+        <button class="bt1" style="background-color: green;">+</button>
+        <button class="bt1" style="background-color: rgb(255, 117, 140);">-</button>
+        <br>
+        <h2>Text Area</h2>
+        <textarea name="txtArea" id="ert" cols="30" rows="10">Enter some text..</textarea>
+    </form>
+</body>
+</html>
