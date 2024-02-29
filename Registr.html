@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registr</title>
+</head>
+<style>
+body
+{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: whitesmoke;
+}
+.txt1
+{
+    position: absolute;
+    right: 35%;
+    top: 0;
+}
+.username
+{
+    background-color: whitesmoke;
+    position: absolute;
+    top: 138px;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    width: 800px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+.firstname
+{
+    background-color: whitesmoke;
+    position: absolute;
+    top: 138px;
+    left: 62.5%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+.lastname
+{
+    background-color: whitesmoke;
+    position: absolute;
+    top: 138px;
+    left: 85%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+.email
+{
+    background-color: whitesmoke;
+    position: absolute;
+    top: 238px;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    width: 800px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+.img1
+{
+    position: absolute;
+}
+.img2
+{
+    position: absolute;
+    bottom: 720px;
+}
+.password
+{
+    background-color: whitesmoke;
+    position: absolute;
+    top: 338px;
+    left: 14%;
+    transform: translate(-50%, -50%);
+    width: 380px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+.password1
+{
+    background-color: whitesmoke;
+    position: absolute;
+    top: 338px;
+    left: 35.5%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+.img3
+{
+    position: absolute;
+    bottom: 620px;
+}
+.combobox1
+{
+    position: absolute;
+    right: 40%;
+    bottom: 73%;
+    height: 40px;
+    width: 10px;
+}
+.date
+{
+    background-color: whitesmoke;
+    position: absolute;
+    top: 238px;
+    left: 85%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+hr
+{
+    position: absolute;
+    color: gray;
+    bottom: 40%;
+    width: 99%;
+}
+.cheks
+{
+    position: absolute;
+    bottom: 50%;
+    font-size: larger;
+}
+.butt1
+{
+    position: absolute;
+    bottom: 15%;
+    right: 10%;
+    width: 200px;
+    height: 100px;
+    font-size: larger;
+    color: white;
+    background-color: rgb(59, 164, 129);
+    border: 1px solid transparent;
+    border-radius: 5px;
+}
+</style>
+<body> 
+    <h1>Registration form</h1>
+    <h1 class="txt1">Personal details</h1>
+    <br>
+    <input type="text" class="username" placeholder="Username">
+    <input type="text" class="firstname" placeholder="First name">
+    <input type="text" class="lastname" placeholder="Last name">
+    <br>
+    <input type="text" class="email" placeholder="Email Address">
+    <div class="img1">
+        <img src="./icons/username.png" alt="username.png">
+    </div>
+    <div class="img2">
+        <img src="./icons/email.png" alt="email.png">
+    </div>
+    <input type="text" class="password" placeholder="Password">
+    <input type="text" class="password1" placeholder="Confirm Password">
+    <br>
+    <div class="img3">
+        <img src="./icons/pswd.png" alt="password.png">
+    </div>
+    <div class="combobox1">
+        <select id="gender" name="gender">
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+        </select>
+    </div>
+    <input type="text" class="date" placeholder="mm/dd/yyyy">
+    <br> 
+    <div class="cheks">
+        <input type="checkbox" id="myCheckbox" name="myCheckbox">
+        <label for="myCheckbox">I want to receive news and special offers</label>
+        <br>
+        <input type="checkbox" id="myCheckbox" name="myCheckbox">
+        <label for="myCheckbox">I agree with the Terms and Conditions</label>
+    </div>
+    <hr>
+    <button class="butt1">SUBMIT</button>
+</body>
+</html>
